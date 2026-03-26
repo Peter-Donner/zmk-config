@@ -54,3 +54,27 @@
                 };
         };
 };
+
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        combo_space_left {
+            timeout-ms = <30>;
+            key-positions = <15 16>;   // D + F
+            bindings = <&kp SPACE>;
+        };
+
+        combo_space_right {
+            timeout-ms = <30>;
+            key-positions = <19 20>;   // J + K
+            bindings = <&kp SPACE>;
+        };
+
+        combo_enter_right {
+            timeout-ms = <30>;
+            key-positions = <19 20 21>;   // J + K + L
+            bindings = <&kp RET>;
+        };
+    };
+};
