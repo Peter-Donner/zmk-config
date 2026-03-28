@@ -17,12 +17,12 @@
 // |  TAB |  Q  |  W  |  E  |  R        |  T      |   |  Y      |  U        |  I   |  O  |  P  | LBKT |
 // | CAPS |  A  |  S  |  D  |  F LSHFT  |  G      |   |  H      |  J RSHFT  |  K   |  L  |  ;  |  '   |    // CAPS -> Neo M3
 // | NUBS |  Z  |  X  |  C  |  V        |  B      |   |  N      |  M        |  ,   |  .  |  /  | ESC  |    // NUBS -> Neo M4
-//                    | Ctrl | Option   | Command |   | ENT SPC | CAPS      | NUBS |                       // CAPS - Neo M3
+//                    | Ctrl | Option   | Command |   | Command | CAPS      | NUBS |                       // CAPS - Neo M3
                         bindings = <
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp LBKT
    &kp CAPS  &kp A &kp S &kp D &mt LSHFT F &kp G   &kp H &mt RSHFT J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp NUBS &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
-                 &kp LCTRL &kp LALT &kp LGUI   &mt RET SPACE &kp CAPS &kp NUBS
+                 &kp LCTRL &kp LALT &kp LGUI   &mt RGUI SPACE &kp CAPS &kp NUBS
                         >;
                 };
                 lower_layer {
@@ -83,5 +83,18 @@
             key-positions = <36 37 38>;
             bindings = <&mo 1>;
         };
+
+        combo_bootloader_left {
+            timeout-ms = <50>;
+            key-positions = <0 1 2>;
+            bindings = <&bootloader>;
+        };
+
+        combo_bootloader_right {
+            timeout-ms = <50>;
+            key-positions = <6 7 8>;
+            bindings = <&bootloader>;
+        };
+
     };
 };
