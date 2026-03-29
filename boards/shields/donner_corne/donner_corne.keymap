@@ -54,14 +54,14 @@
                 };
                 neo_default_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  X  |  V  |  L  |  C        |  W      |   |  K      |  H        |  G   |  F  |  Q  | LBKT |
+// |  TAB |  X  |  V  |  L  |  C        |  W      |   |  K      |  H        |  G   |  F  |  Q  | ß |
 // | CAPS |  U  |  I  |  A  |  E LSHFT  |  O      |   |  S      |  N RSHFT  |  R   |  T  |  D  |  Y   |    // CAPS -> Neo M3
 // | NUBS |  Ü  |  Ö  |  Ä  |  P        |  Z      |   |  B      |  M        |  ,   |  .  |  J  | ESC  |    // NUBS -> Neo M4
 //                    | Ctrl | Option   | Command |   | Cmd/Spc | CAPS      | NUBS |                       // CAPS - Neo M3
                         bindings = <
-   &kp TAB   &kp X &kp V &kp L &kp C &kp W         &kp K &kp H  &kp G     &kp F   &kp Q    &kp LBKT
+   &kp TAB   &kp X &kp V &kp L &kp C &kp W         &kp K &kp H  &kp G     &kp F   &kp Q    &kp MINUS
    &kp CAPS  &kp U &kp I &kp A &mt LSHFT E &kp O   &kp S &mt RSHFT N  &kp R     &kp T   &kp SEMI &kp SQT
-   &kp NUBS &kp Ü &kp Ö &kp Ä &kp P &kp Z          &kp B &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
+   &kp NUBS &kp LBKT &kp SEMI &kp SQT &kp P &kp Z          &kp B &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
             &kp LCTRL &kp LALT &mt LGUI SPACE      &mt RGUI SPACE &kp CAPS &kp NUBS
                         >;
                 };
