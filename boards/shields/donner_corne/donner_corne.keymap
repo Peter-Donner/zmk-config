@@ -73,7 +73,7 @@
     &neo_ellipsis &kp UNDER &kp LBKT &kp RBKT &kp CARET          &kp EXCL   &kp LT &kp GT &kp EQUAL &kp AMPS &neo_longs &trans
 
 /*  u         i         a         e         o                    s          n         r         t         d         y       ? */
-    &kp BSLH &kp FSLH &kp LBRC &kp RBRC &kp STAR                 &kp QMARK  &kp LPAR &kp RPAR &kp MINUS &kp COLON &kp AT &trans
+    &kp BSLH &kp FSLH &kp RA(N7) &kp RBRC &kp STAR                 &kp QMARK  &kp LPAR &kp RPAR &kp MINUS &kp COLON &kp AT &trans
 
 /*  ü        ö        ä        p         z                       b          m         ,       .        j        ?       ? */
     &kp HASH &kp DLLR &kp PIPE &kp TILDE &kp GRAVE               &kp PLUS   &kp PRCNT &kp DQT &kp APOS &kp SEMI &trans &trans
