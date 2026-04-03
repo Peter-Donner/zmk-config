@@ -37,6 +37,28 @@
                     &trans
                 >;
             };
+
+            de_tilde: de_tilde {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                wait-ms = <30>;
+                tap-ms = <30>;
+                bindings = <
+                    &kp RA(N)     // Option + N → ~ (dead key)
+                    &kp SPACE     // ergibt tatsächliches "~"
+                >;
+            };
+
+            de_grave: de_grave {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                wait-ms = <30>;
+                tap-ms = <30>;
+                bindings = <
+                    &kp LS(GRAVE) // Shift + ^-Taste → ` (dead key)
+                    &kp SPACE     // ergibt tatsächliches "`"
+                >;
+            };
         };
         keymap {
                 compatible = "zmk,keymap";
@@ -70,21 +92,21 @@
                 neo_m3_layer {
                         bindings = <
 
-// soll:   …            _          [         ]         ^                !          <       >       =        &        ſ 
+// soll:   …            _          [         ]         ^                !          <       >       =        &        ſ
 // ist:    egal         ?          [         ].        &                !          ;       :       ´        /        egal
     &trans &neo_ellipsis &kp QMARK &kp RA(N5) &kp RA(N6) &kp GRAVE      &kp EXCL   &kp NUBS &kp LS(NUBS) &kp RPAR &kp CARET &neo_longs
 
 // soll:   \              /        {          }          *              ?          (        )        -         :  
-// ist:    \              -        {          }          (              _          )        =        ß         Ö                                                                                                                        
+// ist:    \              -        {          }          (              _          )        =        ß         Ö
     &trans &kp LS(RA(N7)) &kp AMPS &kp RA(N8) &kp RA(N9) &kp LS(RBKT)   &kp UNDER  &kp STAR &kp LPAR &kp FSLH &kp GT &trans
 
-// soll:   #        $        |        ~           `                     +          %         "       '        ;               
+// soll:   #        $        |        ~           `                     +          %         "       '        ;
 // ist:    §        $        |        °           ^                     `          %         Ä       ä        ö
     &trans &kp NUHS &kp DLLR &kp RA(N7) &de_tilde &de_grave             &kp RBKT   &kp PRCNT &kp LS(N2) &kp LS(NUHS) &kp LT &trans
 
                 &trans &trans &trans                                     &trans &trans &trans
                         >;
-}               ;
+                };
                 neo_m4_layer {
 // -----------------------------------------------------------------------------------------
 // |  |    |    |    |          |       |   |        |          |     |    |    |  |
