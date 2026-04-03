@@ -52,11 +52,8 @@
             de_grave: de_grave {
                 compatible = "zmk,behavior-macro";
                 #binding-cells = <0>;
-                wait-ms = <30>;
-                tap-ms = <30>;
                 bindings = <
-                    &kp LS(GRAVE)
-                    &kp SPACE
+                    &kp LS(NUBS)
                 >;
             };
 
