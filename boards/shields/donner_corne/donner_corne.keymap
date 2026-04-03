@@ -70,20 +70,21 @@
                 neo_m3_layer {
                         bindings = <
 
-//         …            _          [         ]         ^                !          <       >       =        &        ſ  
+// soll:   …            _          [         ]         ^                !          <       >       =        &        ſ 
+// ist:    egal         ?          [         ].        &                !          ;       :       ´        /        egal
+    &trans &neo_ellipsis &kp QMARK &kp RA(N5) &kp RA(N6) &kp GRAVE      &kp EXCL   &kp NUBS &kp LS(NUBS) &kp RPAR &kp CARET &neo_longs
 
-/*         x            v          l         c         w                k          h       g       =        &        ß          */
-    &trans &neo_ellipsis &kp UNDER &kp RA(N5) &kp RA(N6) &kp CARET      &kp EXCL   &kp LT  &kp GT  &kp EQUAL &kp AMPS &neo_longs
+// soll:   \              /        {          }          *              ?          (        )        -         :  
+// ist:    \              -        {          }          (              _          )        =        ß         Ö                                                                                                                        
+    &trans &kp LS(RA(N7)) &kp AMPS &kp RA(N8) &kp RA(N9) &kp LS(RBKT)   &kp UNDER  &kp STAR &kp LPAR &kp FSLH &kp GT &trans
 
-//         \        /        {          }          *                    ?          (        )        -         :                
-    &trans &kp LS(RA(N7)) &kp FSLH &kp RA(N8) &kp RA(N9) &kp STAR       &kp QMARK  &kp LPAR &kp RPAR &kp MINUS &kp COLON &trans
-
-/*         #        $        |        ~         `                       +          %         "       '        ;               */
-    &trans &kp HASH &kp DLLR &kp RA(N7) &kp TILDE &kp GRAVE             &kp PLUS   &kp PRCNT &kp DQT &kp APOS &kp SEMI &trans
+// soll:   #        $        |        ~           `                     +          %         "       '        ;               
+// ist:    §        $        |        °           ^                     `          %         Ä       ä        ö
+    &trans &kp NUHS &kp DLLR &kp RA(N7) &de_tilde &de_grave             &kp RBKT   &kp PRCNT &kp LS(N2) &kp LS(NUHS) &kp LT &trans
 
                 &trans &trans &trans                                     &trans &trans &trans
-                    >;
-                };
+                        >;
+}               ;
                 neo_m4_layer {
 // -----------------------------------------------------------------------------------------
 // |  |    |    |    |          |       |   |        |          |     |    |    |  |
