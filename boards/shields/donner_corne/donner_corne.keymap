@@ -55,8 +55,7 @@
                 wait-ms = <30>;
                 tap-ms = <30>;
                 bindings = <
-                    &kp RA(GRAVE)   // Option + ^ → Dead Key für `
-                    &kp SPACE       // → ergibt tatsächliches `
+                    &kp LC(GRAVE)
                 >;
             };
 
@@ -112,7 +111,7 @@
     &trans &kp LS(RA(N7)) &kp AMPS &kp RA(N8) &kp RA(N9) &kp LS(RBKT)   &kp UNDER  &kp STAR &kp LPAR &kp FSLH &kp GT &trans
 
 // soll:   #        $        |        ~           `                     +          %         "       '        ;
-// ist:    #        $        |        ~           °                     +          %         "       '        ;
+// ist:    #        $        |        ~           todo                  +          %         "       '        ;
     &trans &kp NUHS &kp DLLR &kp RA(N7) &de_tilde &de_grave             &kp RBKT   &kp PRCNT &kp LS(N2) &kp LS(NUHS) &kp LT &trans
 
                 &trans &trans &trans                                     &trans &trans &trans
