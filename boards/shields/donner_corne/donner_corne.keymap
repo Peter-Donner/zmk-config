@@ -62,7 +62,7 @@
 //                    |     |           |         |   |         |           |      |
                         bindings = <
    &trans              &kp X &kp V &kp L &kp C &kp W         &kp K &kp H  &kp G     &kp F   &kp Q    &kp MINUS
-   &mo KB_LAYER_NEO_M3 &kp U &kp I &kp A &kp E &kp O         &kp S &kp N  &kp R     &kp T   &kp D    &lt SQT KB_LAYER_NEO_M3
+   &mo KB_LAYER_NEO_M3 &kp U &kp I &kp A &kp E &kp O         &kp S &kp N  &kp R     &kp T   &kp D    &lt KB_LAYER_NEO_M3 Y
    &trans              &kp LBKT &kp SEMI &kp SQT &kp P &kp Z      &kp B &kp M  &kp COMMA &kp DOT &kp FSLH &trans
              &trans &trans &trans                    &trans &trans &trans
                         >;
