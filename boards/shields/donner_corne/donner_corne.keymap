@@ -110,7 +110,7 @@
 
 // soll:   #        $        |        ~           `                     +          %         "       '        ;
 // ist:    #        $        |        ~           todo                  +          %         "       '        ;
-    &trans &kp NUHS &kp DLLR &kp RA(N7) &de_tilde &de_grave             &kp RBKT   &kp PRCNT &kp LS(N2) &kp LS(NUHS) &kp LT &trans
+    &trans &kp NUHS &kp DLLR &kp RA(N7) &de_tilde &kp LS(NUBS)          &kp RBKT   &kp PRCNT &kp LS(N2) &kp LS(NUHS) &kp LT &trans
 
                 &trans &trans &trans                                     &trans &trans &trans
                         >;
