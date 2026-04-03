@@ -55,7 +55,7 @@
                 wait-ms = <30>;
                 tap-ms = <30>;
                 bindings = <
-                    &kp LC(GRAVE)
+                    &kp LC(LS(GRAVE))
                 >;
             };
 
