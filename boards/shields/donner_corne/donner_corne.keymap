@@ -62,25 +62,25 @@
 //                    |     |           |         |   |         |           |      |
                         bindings = <
    &trans              &kp X &kp V &kp L &kp C &kp W         &kp K &kp H  &kp G     &kp F   &kp Q    &kp MINUS
-   &mo KB_LAYER_NEO_M3 &kp U &kp I &kp A &kp E &kp O         &kp S &kp N  &kp R     &kp T   &kp D    &lt KB_LAYER_NEO_M3 Y
-   &trans              &kp LBKT &kp SEMI &kp SQT &kp P &kp Z      &kp B &kp M  &kp COMMA &kp DOT &kp FSLH &trans
+   &mo KB_LAYER_NEO_M3 &kp U &kp I &kp A &kp E &kp O         &kp S &kp N  &kp R     &kp T   &kp D    &lt KB_LAYER_NEO_M3 Z
+   &trans              &kp LBKT &kp SEMI &kp SQT &kp P &kp Y      &kp B &kp M  &kp COMMA &kp DOT &kp FSLH &trans
              &trans &trans &trans                    &trans &trans &trans
                         >;
                 };
                 neo_m3_layer {
             bindings = <
-/*  x            v          l         c         w                k          h       g       f         q        ß          ? */
-    &neo_ellipsis &kp UNDER &kp LBKT &kp RBKT &kp CARET          &kp EXCL   &kp LT &kp GT &kp EQUAL &kp AMPS &neo_longs &trans
+/*         x            v          l         c         w                k          h       g       =        &        ß          */
+    &trans &neo_ellipsis &kp UNDER &kp LBKT &kp RBKT &kp CARET          &kp EXCL   &kp LT  &kp GT  &kp LPAR &kp AMPS &neo_longs
 
-/*  u         i         a         e         o                    s          n         r         t         d         y       ? */
-    &kp BSLH &kp FSLH &kp RA(N8) &kp RA(N9) &kp STAR                 &kp QMARK  &kp LPAR &kp RPAR &kp MINUS &kp COLON &kp AT &trans
+/*         u         i         a         e         o                    s          n         r         t         d         y       */
+    &trans &kp BSLH &kp FSLH &kp RA(N7) &kp RA(N8) &kp STAR             &kp QMARK  &kp LPAR &kp RPAR &kp MINUS &kp COLON &kp AT
 
-/*  ü        ö        ä        p         z                       b          m         ,       .        j        ?       ? */
-    &kp HASH &kp DLLR &kp PIPE &kp TILDE &kp GRAVE               &kp PLUS   &kp PRCNT &kp DQT &kp APOS &kp SEMI &trans &trans
+/*         ü        ö        ä        p         z                       b          m         ,       .        j        ?       */
+    &trans &kp HASH &kp DLLR &kp PIPE &kp TILDE &kp GRAVE               &kp PLUS   &kp PRCNT &kp DQT &kp APOS &kp SEMI &trans
 
                 &trans &trans &trans                                     &trans &trans &trans
             >;
-        };
+        }
                 neo_m4_layer {
 // -----------------------------------------------------------------------------------------
 // |  |    |    |    |          |       |   |        |          |     |    |    |  |
