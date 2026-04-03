@@ -55,8 +55,19 @@
                 wait-ms = <30>;
                 tap-ms = <30>;
                 bindings = <
-                    &kp LS(GRAVE) // Shift + ^-Taste → ` (dead key)
-                    &kp SPACE     // ergibt tatsächliches "`"
+                    &kp RA(GRAVE)   // Option + ^ → Dead Key für `
+                    &kp SPACE       // → ergibt tatsächliches `
+                >;
+            };
+
+            de_caret: de_caret { // Zeichen ^
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                wait-ms = <30>;
+                tap-ms = <30>;
+                bindings = <
+                    &kp GRAVE
+                    &kp SPACE
                 >;
             };
         };
@@ -92,16 +103,16 @@
                 neo_m3_layer {
                         bindings = <
 
-// soll:   …            _          [         ]         ^                !          <       >       =        &        ſ
-// ist:    egal         ?          [         ].        &                !          ;       :       ´        /        egal
-    &trans &neo_ellipsis &kp QMARK &kp RA(N5) &kp RA(N6) &kp GRAVE      &kp EXCL   &kp NUBS &kp LS(NUBS) &kp RPAR &kp CARET &neo_longs
+// soll:   …             _          [         ]          ^                !          <       >       =        &        ſ
+// ist:    egal          _          [         ]          ^                !          <       >       =        &        egal
+    &trans &neo_ellipsis &kp QMARK &kp RA(N5) &kp RA(N6) &de_caret        &kp EXCL   &kp NUBS &kp LS(NUBS) &kp RPAR &kp CARET &neo_longs
 
 // soll:   \              /        {          }          *              ?          (        )        -         :  
-// ist:    \              -        {          }          (              _          )        =        ß         Ö
+// ist:    \              /        {          }          *              ?          (        )        -         :
     &trans &kp LS(RA(N7)) &kp AMPS &kp RA(N8) &kp RA(N9) &kp LS(RBKT)   &kp UNDER  &kp STAR &kp LPAR &kp FSLH &kp GT &trans
 
 // soll:   #        $        |        ~           `                     +          %         "       '        ;
-// ist:    §        $        |        °           ^                     `          %         Ä       ä        ö
+// ist:    #        $        |        ~           °                     +          %         "       '        ;
     &trans &kp NUHS &kp DLLR &kp RA(N7) &de_tilde &de_grave             &kp RBKT   &kp PRCNT &kp LS(N2) &kp LS(NUHS) &kp LT &trans
 
                 &trans &trans &trans                                     &trans &trans &trans
