@@ -68,19 +68,22 @@
                         >;
                 };
                 neo_m3_layer {
-            bindings = <
+                        bindings = <
+
+//         …            _          [         ]         ^                !          <       >       =        &        ſ  
+
 /*         x            v          l         c         w                k          h       g       =        &        ß          */
-    &trans &neo_ellipsis &kp UNDER &kp LBKT &kp RBKT &kp CARET          &kp EXCL   &kp LT  &kp GT  &kp LPAR &kp AMPS &neo_longs
+    &trans &neo_ellipsis &kp UNDER &kp RA(N5) &kp RA(N6) &kp CARET      &kp EXCL   &kp LT  &kp GT  &kp EQUAL &kp AMPS &neo_longs
 
-/*         u         i         a         e         o                    s          n         r         t         d         y       */
-    &trans &kp BSLH &kp FSLH &kp RA(N7) &kp RA(N8) &kp STAR             &kp QMARK  &kp LPAR &kp RPAR &kp MINUS &kp COLON &kp AT
+//         \        /        {          }          *                    ?          (        )        -         :                
+    &trans &kp LS(RA(N7)) &kp FSLH &kp RA(N8) &kp RA(N9) &kp STAR       &kp QMARK  &kp LPAR &kp RPAR &kp MINUS &kp COLON &trans
 
-/*         ü        ö        ä        p         z                       b          m         ,       .        j        ?       */
-    &trans &kp HASH &kp DLLR &kp PIPE &kp TILDE &kp GRAVE               &kp PLUS   &kp PRCNT &kp DQT &kp APOS &kp SEMI &trans
+/*         #        $        |        ~         `                       +          %         "       '        ;               */
+    &trans &kp HASH &kp DLLR &kp RA(N7) &kp TILDE &kp GRAVE             &kp PLUS   &kp PRCNT &kp DQT &kp APOS &kp SEMI &trans
 
                 &trans &trans &trans                                     &trans &trans &trans
-            >;
-        };
+                    >;
+                };
                 neo_m4_layer {
 // -----------------------------------------------------------------------------------------
 // |  |    |    |    |          |       |   |        |          |     |    |    |  |
