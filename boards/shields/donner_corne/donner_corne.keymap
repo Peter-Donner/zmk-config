@@ -49,12 +49,14 @@
                 >;
             };
 
-// TODO: löschen
             de_grave: de_grave {
                 compatible = "zmk,behavior-macro";
                 #binding-cells = <0>;
+                wait-ms = <20>;
+                tap-ms = <20>;
                 bindings = <
-                    &kp LS(NUBS)
+                    &kp LS(EQUAL)
+                    &kp SPACE
                 >;
             };
 
@@ -105,13 +107,13 @@
 // ist:    egal          _          [         ]          ^                !          <       >       =        &        egal
     &trans &neo_ellipsis &kp QMARK &kp RA(N5) &kp RA(N6) &de_caret        &kp EXCL   &kp NUBS &kp LS(NUBS) &kp RPAR &kp CARET &neo_longs
 
-// soll:   \              /        {          }          *              ?          (        )        -         :  
-// ist:    \              /        {          }          *              ?          (        )        -         :
-    &trans &kp LS(RA(N7)) &kp AMPS &kp RA(N8) &kp RA(N9) &kp LS(RBKT)   &kp UNDER  &kp STAR &kp LPAR &kp FSLH &kp GT &trans
+// soll:   \              /        {          }          *                ?          (        )        -         :  
+// ist:    \              /        {          }          *                ?          (        )        -         :
+    &trans &kp LS(RA(N7)) &kp AMPS &kp RA(N8) &kp RA(N9) &kp LS(RBKT)     &kp UNDER  &kp STAR &kp LPAR &kp FSLH &kp GT &trans
 
-// soll:   #        $        |        ~           `                     +          %         "       '        ;
-// ist:    #        $        |        ~           todo                  +          %         "       '        ;
-    &trans &kp NUHS &kp DLLR &kp RA(N7) &de_tilde &kp LS(EQUAL)         &kp RBKT   &kp PRCNT &kp LS(N2) &kp LS(NUHS) &kp LT &trans
+// soll:   #        $        |        ~           `                       +          %         "       '        ;
+// ist:    #        $        |        ~           todo                    +          %         "       '        ;
+    &trans &kp NUHS &kp DLLR &kp RA(N7) &de_tilde &de_grave               &kp RBKT   &kp PRCNT &kp LS(N2) &kp LS(NUHS) &kp LT &trans
 
                 &trans &trans &trans                                     &trans &trans &trans
                         >;
