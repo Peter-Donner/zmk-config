@@ -121,9 +121,10 @@
 neo_m4_layer {
     bindings = <
 // soll: egal, eine Seite rauf, Zeichen links löschen, Cursor rauf, Zeichen rechts löschen, eine Seite runter, egal, 7, 8, 9, +, -
+// ist: egal, eine Seite rauf, Zeichen links löschen, Cursor rauf, Zeichen rechts löschen, eine Seite runter, egal, 7, 8, 9, `, ß
      &trans &kp PG_UP &kp BSPC &kp UP   &kp DEL  &kp PG_DN      &trans &kp N7    &kp N8   &kp N9    &kp PLUS &kp MINUS
-// soll: Anfang Zeile, Cursor links, Cursor runter, Cursor rechts, Ende Zeile, egal, 4, 5, 6, Beistrich, Punkt
-     &kp LG(LEFT) &kp LEFT &kp DOWN &kp RIGHT &kp LG(RIGHT) &trans   &kp N4 &kp N5 &kp N6 &kp COMMA &kp DOT &trans
+// soll: egal, Anfang Zeile, Cursor links, Cursor runter, Cursor rechts, Ende Zeile, egal, 4, 5, 6, Beistrich, Punkt
+     &trans, &kp LG(LEFT) &kp LEFT &kp DOWN &kp RIGHT &kp LG(RIGHT) &trans   &kp N4 &kp N5 &kp N6 &kp COMMA &kp DOT
 // soll: egal, Escape, Tab, Paste, Enter, Rückgängig, Doppelpunkt, 1, 2, 3, Semikolon, egal
      &trans &kp ESC &kp TAB &kp LG(V) &kp RET &kp LG(Z)         &kp COLON &kp N1  &kp N2   &kp N3    &kp SEMI &trans
              &trans &trans &trans                             &trans &trans &trans
@@ -131,7 +132,7 @@ neo_m4_layer {
 };
 
 
-
+erwewe
 
 
                 bt_layer {
