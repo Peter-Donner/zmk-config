@@ -96,7 +96,7 @@
                         bindings = <
    &trans              &kp X                    &kp V    &kp L   &kp C &kp W           &kp K &kp H  &kp G     &kp F   &kp Q    &kp MINUS
    &mo KB_LAYER_NEO_M3 &kp U                    &kp I    &kp A   &kp E &kp O           &kp S &kp N  &kp R     &kp T   &kp D    &lt KB_LAYER_NEO_M3 Z
-   &trans              &lt KB_LAYER_NEO_M4 LBKT &kp SEMI &kp SQT &kp P &kp Y           &kp B &kp M  &kp COMMA &kp DOT &kp FSLH &trans
+   &trans              &lt KB_LAYER_NEO_M4 LBKT &kp SEMI &kp SQT &kp P &kp Y           &kp B &kp M  &kp COMMA &kp DOT &kp FSLH &mt RSHIFT J
              &trans &trans &trans                                                      &trans &trans &mo KB_LAYER_NEO_M4
                         >;
                 };
