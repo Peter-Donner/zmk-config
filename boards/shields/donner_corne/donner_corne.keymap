@@ -111,7 +111,7 @@
 
 // soll:   #        $        |        ~           `                     +          %         "       '        ;
 // ist:    #        $        |        ~           todo                  +          %         "       '        ;
-    &trans &kp NUHS &kp DLLR &kp RA(N7) &de_tilde &kp LS(MINUS)         &kp RBKT   &kp PRCNT &kp LS(N2) &kp LS(NUHS) &kp LT &trans
+    &trans &kp NUHS &kp DLLR &kp RA(N7) &de_tilde &kp LS(EQUAL)         &kp RBKT   &kp PRCNT &kp LS(N2) &kp LS(NUHS) &kp LT &trans
 
                 &trans &trans &trans                                     &trans &trans &trans
                         >;
