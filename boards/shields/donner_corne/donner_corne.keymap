@@ -49,6 +49,7 @@
                 >;
             };
 
+// TODO: löschen
             de_grave: de_grave {
                 compatible = "zmk,behavior-macro";
                 #binding-cells = <0>;
@@ -110,7 +111,7 @@
 
 // soll:   #        $        |        ~           `                     +          %         "       '        ;
 // ist:    #        $        |        ~           todo                  +          %         "       '        ;
-    &trans &kp NUHS &kp DLLR &kp RA(N7) &de_tilde &kp LS(NUBS)          &kp RBKT   &kp PRCNT &kp LS(N2) &kp LS(NUHS) &kp LT &trans
+    &trans &kp NUHS &kp DLLR &kp RA(N7) &de_tilde &kp LS(MINUS)         &kp RBKT   &kp PRCNT &kp LS(N2) &kp LS(NUHS) &kp LT &trans
 
                 &trans &trans &trans                                     &trans &trans &trans
                         >;
