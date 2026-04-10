@@ -135,7 +135,7 @@ neo_m4_layer {
    &mt ESC TAB         &kp X                    &kp V    &kp L   &kp C &kp W           &kp K &kp H  &kp G     &kp F   &kp Q    &kp MINUS
    &mo KB_LAYER_NEO_M3_LINUX &kp U                    &kp I    &kp A   &kp E &kp O           &kp S &kp N  &kp R     &kp T   &kp D    &lt KB_LAYER_NEO_M3_LINUX Z
    &kp LSHIFT          &lt KB_LAYER_NEO_M4_LINUX LBKT &kp SEMI &kp SQT &kp P &kp Y           &kp B &kp M  &kp COMMA &kp DOT &kp J    &kp RSHIFT
-             &mt LCTRL SPACE &mt LALT SPACE  &mt LGUI BSPC                             &mt RGUI RE  T &mt RALT SPACE &mo KB_LAYER_NEO_M4_LINUX
+             &mt LCTRL SPACE &mt LALT SPACE  &mt LGUI BSPC                             &mt RGUI RET &mt RALT SPACE &mo KB_LAYER_NEO_M4_LINUX
                         >;
                 };
                 neo_m3_layer_linux {
