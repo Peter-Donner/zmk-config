@@ -86,7 +86,7 @@
    &mt ESC TAB         &kp X                    &kp V    &kp L   &kp C &kp W           &kp K &kp H  &kp G     &kp F   &kp Q    &kp MINUS
    &mo KB_LAYER_NEO_M3 &kp U                    &kp I    &kp A   &kp E &kp O           &kp S &kp N  &kp R     &kp T   &kp D    &lt KB_LAYER_NEO_M3 Z
    &kp LSHIFT          &lt KB_LAYER_NEO_M4 LBKT &kp SEMI &kp SQT &kp P &kp Y           &kp B &kp M  &kp COMMA &kp DOT &kp J    &kp RSHIFT
-             &mt LCTRL SPACE &mt LALT SPACE  &mt LGUI BSPC                             &mt RGUI RE  &mt RALT SPACE &mo KB_LAYER_NEO_M4
+             &mt LCTRL SPACE &mt LALT SPACE  &mt LGUI BSPC                             &mt RGUI RET &mt RALT SPACE &mo KB_LAYER_NEO_M4
                         >;
                 };
                 neo_m3_layer {
