@@ -236,7 +236,7 @@ neo_m4_layer_linux {
         combo_to_neo_layer_mac {
             timeout-ms = <50>;
             key-positions = <12 13 14>;
-            bindings = <&to KB_LAYER_NEO_M4>;
+            bindings = <&to KB_LAYER_NEO_LINUX>;
             layers = <KB_LAYER_NEO>;
         };
 
@@ -244,7 +244,7 @@ neo_m4_layer_linux {
             timeout-ms = <50>;
             key-positions = <24 25 26>;
             bindings = <&to KB_LAYER_NEO>;
-            layers = <0>;
+            layers = <KB_LAYER_NEO_LINUX>;
         };
 
     };
