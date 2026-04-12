@@ -8,9 +8,9 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define KB_LAYER_NEO  0
-#define KB_LAYER_NEO_M3  1
-#define KB_LAYER_NEO_M4  2
+#define KB_LAYER_NEO_MAC  0
+#define KB_LAYER_NEO_M3_MAC  1
+#define KB_LAYER_NEO_M4_MAC  2
 #define KB_LAYER_NEO_LINUX  3
 #define KB_LAYER_NEO_M3_LINUX  4
 #define KB_LAYER_NEO_M4_LINUX  5
@@ -18,7 +18,18 @@
 
 / {
         macros {
-            neo_ellipsis: neo_ellipsis {
+            neo_ellipsis_mac: neo_ellipsis_mac {
+                compatible = "zmk,behavior-macro";
+                #binding-cells = <0>;
+                wait-ms = <30>;
+                tap-ms = <30>;
+                bindings = <
+                    /* Platzhalter */
+                    &kp DOT &kp DOT &kp DOT
+                >;
+            };
+
+            neo_ellipsis_linux: neo_ellipsis_linux {
                 compatible = "zmk,behavior-macro";
                 #binding-cells = <0>;
                 wait-ms = <30>;
@@ -84,9 +95,9 @@
 //                    |     |           |         |   |         |           |      |
                         bindings = <
    &mt ESC TAB         &kp X                    &kp V    &kp L   &kp C &kp W           &kp K &kp H  &kp G     &kp F   &kp Q    &kp MINUS
-   &mo KB_LAYER_NEO_M3 &kp U                    &kp I    &kp A   &kp E &kp O           &kp S &kp N  &kp R     &kp T   &kp D    &lt KB_LAYER_NEO_M3 Z
-   &kp LSHIFT          &lt KB_LAYER_NEO_M4 LBKT &kp SEMI &kp SQT &kp P &kp Y           &kp B &kp M  &kp COMMA &kp DOT &kp J    &kp RSHIFT
-             &kp LCTRL &mt LALT SPACE  &mt LGUI BSPC                             &mt RGUI RET &mt RALT SPACE &mo KB_LAYER_NEO_M4
+   &mo KB_LAYER_NEO_M3_MAC &kp U                    &kp I    &kp A   &kp E &kp O           &kp S &kp N  &kp R     &kp T   &kp D    &lt KB_LAYER_NEO_M3_MAC Z
+   &kp LSHIFT          &lt KB_LAYER_NEO_M4_MAC LBKT &kp SEMI &kp SQT &kp P &kp Y           &kp B &kp M  &kp COMMA &kp DOT &kp J    &kp RSHIFT
+             &kp LCTRL &mt LALT SPACE  &mt LGUI BSPC                             &mt RGUI RET &mt RALT SPACE &mo KB_LAYER_NEO_M4_MAC
                         >;
                 };
                 neo_m3_layer {
@@ -94,7 +105,7 @@
 
 // soll:   …             _          [         ]          ^                !          <       >       =        &        ſ
 // ist:    egal          _          [         ]          ^                !          <       >       =        &        egal
-    &trans &neo_ellipsis &kp QMARK &kp RA(N5) &kp RA(N6) &de_caret        &kp EXCL   &kp NUBS &kp LS(NUBS) &kp RPAR &kp CARET &neo_longs
+    &trans &neo_ellipsis_mac &kp QMARK &kp RA(N5) &kp RA(N6) &de_caret        &kp EXCL   &kp NUBS &kp LS(NUBS) &kp RPAR &kp CARET &neo_longs
 
 // soll:   \              /        {          }          *                ?          (        )        -         :  
 // ist:    \              /        {          }          *                ?          (        )        -         :
@@ -138,24 +149,26 @@ neo_m4_layer {
              &mt LCTRL SPACE &mt LALT SPACE  &mt LGUI BSPC                             &mt RGUI RET &mt RALT SPACE &mo KB_LAYER_NEO_M4_LINUX
                         >;
                 };
+
                 neo_m3_layer_linux {
                         bindings = <
 
-// soll:   …             _          [         ]          ^                !          <       >       =        &        ſ
+// soll:   …          [         ]          ^                !          <       >       =        &        ſ
 // ist:    
-    &trans &neo_ellipsis &kp QMARK &kp RA(N5) &kp RA(N6) &de_caret        &kp EXCL   &kp NUBS &kp LS(NUBS) &kp RPAR &kp CARET &neo_longs
+    &trans &neo_ellipsis_linux &kp LBKT &kp RBKT &kp CARET &kp EXCL &kp LT &kp GT &kp EQ &kp AMPS &neo_longs &trans
 
 // soll:   \              /        {          }          *                ?          (        )        -         :  
 // ist:    
-    &trans &kp LS(RA(N7)) &kp AMPS &kp RA(N8) &kp RA(N9) &kp LS(RBKT)     &kp UNDER  &kp STAR &kp LPAR &kp FSLH &kp GT &trans
+    &kp BSLH &kp FSLH &kp LBRC &kp RBRC &kp ASTER &kp QMARK &kp LPAR &kp RPAR &kp MINUS &kp COLON &trans &trans
 
 // soll:   #        $        |        ~           `                       +          %         "       '        ;
 // ist:    
-    &trans &kp NUHS &kp DLLR &kp RA(N7) &de_tilde &de_grave               &kp RBKT   &kp PRCNT &kp LS(N2) &kp LS(NUHS) &kp LT &trans
+    &kp HASH &kp DOLLAR &kp VBAR &kp TILDE &kp GRAVE &kp PLUS &kp PERCENT &kp DQUOT &kp APOS &kp SEMI &trans &trans
 
-                &trans &trans &trans                                     &trans &trans &trans
+                &trans &trans &trans                                   &trans &trans &trans
                         >;
                 };
+
 
                 /* TODO: Doppelpunktt */
 neo_m4_layer_linux {
