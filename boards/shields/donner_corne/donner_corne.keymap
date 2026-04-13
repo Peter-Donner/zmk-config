@@ -153,22 +153,19 @@ neo_m4_layer {
                 neo_m3_layer_linux {
                         bindings = <
 
-// soll:   …          [         ]          ^                !          <       >       =        &        ſ
-// ist:    
-    &trans &neo_ellipsis_linux &kp LBKT &kp RBKT &kp CARET &kp EXCL &kp LT &kp GT &kp EQUAL &kp AMPS &neo_longs &trans
-
-// soll:   \              /        {          }          *                ?          (        )        -         :  
-// ist:    
-    &kp BSLH &kp FSLH &kp LBRC &kp RBRC &kp ASTER &kp QMARK &kp LPAR &kp RPAR &kp MINUS &kp COLON &trans &trans
+// soll:   …             _          [         ]          ^                !          <       >       =        &        ſ
+// ist:    &trans &neo_ellipsis_linux &kp QMARK &kp RA(N5) &kp RA(N6) &de_caret        &kp EXCL   &kp N
+// neu:
+    &trans &neo_ellipsis_linux &kp QMARK &kp UNDER &kp LBRC &kp RBRC &kp CARET &kp EXCL &kp LT &kp GT &kp EQUAL &kp AMPS &trans
 
 // soll:   #        $        |        ~           `                       +          %         "       '        ;
-// ist:    
-    &kp HASH &kp DOLLAR &kp VBAR &kp TILDE &kp GRAVE &kp PLUS &kp PERCENT &kp DQUOT &kp APOS &kp SEMI &trans &trans
+// ist:    &trans &kp NUHS &kp DLLR &kp RA(N7) &de_tilde &de_grave               &kp RBKT   &kp PRCNT &kp LS(N2) &kp LS(NUHS) &kp LT &trans
+// neu:
+    &trans &kp NUHS &kp DLLR &kp VBAR &kp TILDE &kp GRAVE &kp PLUS &kp PRCNT &kp DQUOT &kp APOS &kp SEMI &trans
 
-                &trans &trans &trans                                   &trans &trans &trans
+                &trans &trans &trans                                     &trans &trans &trans
                         >;
                 };
-
 
                 /* TODO: Doppelpunktt */
 neo_m4_layer_linux {
