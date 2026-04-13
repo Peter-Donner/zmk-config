@@ -155,7 +155,7 @@ neo_m4_layer {
 
 // soll:   …          [         ]          ^                !          <       >       =        &        ſ
 // ist:    
-    &trans &neo_ellipsis_linux &kp LBKT &kp RBKT &kp CARET &kp EXCL &kp LT &kp GT &kp EQ &kp AMPS &neo_longs &trans
+    &trans &neo_ellipsis_linux &kp LBKT &kp RBKT &kp CARET &kp EXCL &kp LT &kp GT &kp EQUAL &kp AMPS &neo_longs &trans
 
 // soll:   \              /        {          }          *                ?          (        )        -         :  
 // ist:    
