@@ -152,15 +152,20 @@ neo_m4_layer {
 
                 neo_m3_layer_linux {
                         bindings = <
-// soll:   …          [          ]          ^                !          <       >       =        &        ſ
-// ist:    
-    &trans &neo_ellipsis_linux &kp LBRC    &kp RBRC    &kp CARET       &kp EXCL   &kp LT    &kp GT    &kp EQUAL    &kp AMP    &trans
+
+// soll:   …             _          [         ]          ^                !          <       >       =        &        ſ
+// ist:    (Anpassung an direkte Keycodes für Linux/Windows)
+    &trans &neo_ellipsis_mac &kp LS(MINUS) &kp LBKT &kp RBKT &de_caret        &kp EXCL   &kp LT &kp GT &kp EQUAL &kp AMPS &neo_longs
+
+// soll:   \              /        {          }          *                ?          (        )        -         :  
+// ist:    (Anpassung an direkte Keycodes für Linux/Windows)
+    &trans &kp BSLH &kp FSLH &kp LS(LBKT) &kp RS(RBKT) &kp STAR &kp QMARK &kp LPAR &kp RPAR &kp MINUS &kp COLON &trans
 
 // soll:   #        $        |        ~           `                       +          %         "       '        ;
-// ist:    
-    &trans &kp NUHS &kp DLLR &kp VBAR    &kp TILDE   &kp GRAVE               &kp PLUS   &kp PRCNT &kp DQUOT &kp APOS  &kp SCOLON &trans
+// ist:    (Anpassung an direkte Keycodes für Linux/Windows)
+    &trans &kp NUHS &kp DLLR &kp VBAR &de_tilde &de_grave               &kp PLUS &kp PRCNT &kp DQUOT &kp APOS &kp SEMI &trans
 
-                &trans &trans &trans                                       &trans &trans &trans
+                &trans &trans &trans                                      &trans &trans &trans
                         >;
                 };
 
