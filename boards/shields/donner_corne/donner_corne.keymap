@@ -154,7 +154,7 @@ neo_m4_layer {
                         bindings = <
 // soll:   …          [          ]          ^                !          <       >       =        &        ſ
 // ist:    
-    &trans &neo_ellipsis_linux &kp LBRC    &kp RBRC    &kp CARET       &kp EXCL   &kp LT    &kp GT    &kp EQ    &kp AMP    &trans
+    &trans &neo_ellipsis_linux &kp LBRC    &kp RBRC    &kp CARET       &kp EXCL   &kp LT    &kp GT    &kp EQUAL    &kp AMP    &trans
 
 // soll:   #        $        |        ~           `                       +          %         "       '        ;
 // ist:    
