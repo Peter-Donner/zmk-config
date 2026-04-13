@@ -163,7 +163,7 @@ neo_m4_layer {
 
 // soll:   #        $        |        ~           `                       +          %         "       '        ;
 // ist:    (Anpassung an direkte Keycodes für Linux/Windows)
-    &trans &kp NUHS &kp DLLR &kp VBAR &de_tilde &de_grave               &kp PLUS &kp PRCNT &kp DQUOT &kp APOS &kp SEMI &trans
+    &trans &kp NUHS &kp DLLR &kp PIPE &de_tilde &de_grave               &kp PLUS &kp PRCNT &kp GRAVE &kp APOS &kp SEMI &trans
 
                 &trans &trans &trans                                      &trans &trans &trans
                         >;
