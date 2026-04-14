@@ -97,7 +97,7 @@
    &mt ESC TAB         &kp X                    &kp V    &kp L   &kp C &kp W           &kp K &kp H  &kp G     &kp F   &kp Q    &kp MINUS
    &mo KB_LAYER_NEO_M3_MAC &kp U                    &kp I    &kp A   &kp E &kp O           &kp S &kp N  &kp R     &kp T   &kp D    &lt KB_LAYER_NEO_M3_MAC Z
    &kp LSHIFT          &lt KB_LAYER_NEO_M4_MAC LBKT &kp SEMI &kp SQT &kp P &kp Y           &kp B &kp M  &kp COMMA &kp DOT &kp J    &kp RSHIFT
-             &kp LCTRL &mt LALT SPACE  &mt LGUI BSPC                             &mt RGUI RET &mt RALT SPACE &mo KB_LAYER_NEO_M4_MAC
+             &mt LCTRL SPACE &kp LALT  &mt LGUI BSPC                             &mt RGUI RET &kp RALT &lt KB_LAYER_NEO_M4_MAC SPACE
                         >;
                 };
                 neo_m3_layer {
@@ -105,7 +105,7 @@
 
 // soll:   …             _          [         ]          ^                !          <       >       =        &        ſ
 // ist:    egal          _          [         ]          ^                !          <       >       =        &        egal
-    &trans &neo_ellipsis_mac &kp QMARK &kp RA(N5) &kp RA(N6) &de_caret        &kp EXCL   &kp NUBS &kp LS(NUBS) &kp RPAR &kp CARET &neo_longs
+    &trans &neo_ellipsis_linux &kp QMARK &kp RA(N5) &kp RA(N6) &de_caret        &kp EXCL   &kp NUBS &kp LS(NUBS) &kp RPAR &kp CARET &neo_longs
 
 // soll:   \              /        {          }          *                ?          (        )        -         :  
 // ist:    \              /        {          }          *                ?          (        )        -         :
