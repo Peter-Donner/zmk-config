@@ -107,8 +107,8 @@
 // ist:    egal          _          [         ]          ^                !          <       >       =        &        egal
     &trans &neo_ellipsis_linux &kp QMARK &kp RA(N5) &kp RA(N6) &de_caret        &kp EXCL   &kp NUBS &kp LS(NUBS) &kp RPAR &kp CARET &neo_longs
 
-// soll:   \              /        {          }          *                ?          (        )        -         :  
-// ist:    \              /        {          }          *                ?          (        )        -         :
+// soll:   \              /        {          }          *                ?          (        )        -         :     @
+// ist:    \              /        {          }          *                ?          (        )        -         :     Y
     &trans &kp LS(RA(N7)) &kp AMPS &kp RA(N8) &kp RA(N9) &kp LS(RBKT)     &kp UNDER  &kp STAR &kp LPAR &kp FSLH &kp GT &trans
 
 // soll:   #        $        |        ~           `                       +          %         "       '        ;
@@ -129,7 +129,7 @@ neo_m4_layer {
      &trans &kp LG(LEFT) &kp LEFT &kp DOWN &kp RIGHT &kp LG(RIGHT) &trans   &kp N4 &kp N5 &kp N6 &kp COMMA &kp DOT
 // soll: egal, Escape, Tab, Paste, Enter, Rückgängig, Doppelpunkt, 1, 2, 3, Semikolon, egal
      &trans &kp ESC &kp TAB &kp LG(V) &kp RET &kp LG(Z)         &kp COLON &kp N1  &kp N2   &kp N3    &kp SEMI &trans
-             &trans &trans &trans                             &trans &kp N0 &trans
+             &trans &trans &trans                             &trans &trans &kp N0
     >;
 };
 
